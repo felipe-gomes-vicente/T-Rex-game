@@ -1,7 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #202020;
+  font-family: 'Times New Roman', times, serif;
+  color: #FFF;
+}
+
+.container {
+  margin-top: 80px;
+}
+
+.container h1 {
+  text-align: center;
+}
+
 .game {
   width: 600px;
   height: 200px;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #FFF;
   margin: auto;
 }
 
@@ -12,6 +31,7 @@
   background-size: 50px 50px;
   position: relative;
   top: 150px;
+  margin-left: 10px;
 }
 
 #cactus {
@@ -24,6 +44,15 @@
   left: 580px;
   animation: cactusMov 1s infinite linear;
 }
+
+.text-game {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 18px;
+}
+.text-game span{
+  color: red;
+} 
 
 @keyframes cactusMov {
   0% {
@@ -60,7 +89,7 @@
 }
 
 footer {
-  margin-top: 300px;
+  margin-top: 210px;
   display: flex;
   justify-content: center;
 }
